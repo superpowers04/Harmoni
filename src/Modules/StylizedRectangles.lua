@@ -2,14 +2,14 @@ function beveledRectangle(width, height, x, y, cornerRadius, cornerSegments, bor
     local width = width or error("missing width argument to beveledRectanlge")
     local height = height or error("missing height argument to beveledRectanlge")
     local x = x or error("missing x argument to beveledRectanlge")
-    local y = y or error("too lazy to type error message")
-    local cornerRadius = cornerRadius or error("blah blah blah")  -- should prob type real error messages here.. too lazy tho
-    local cornerSegments = cornerSegments or error("error")
-    local borderSize = borderSize or error("this function has so many arguments")
-    local fillColor1 = fillColor1 or error(".")
-    local fillColor2 = fillColor2 or error(".")
-    local borderColor1 = borderColor1 or error(".")
-    local borderColor2 = borderColor2 or error(".")
+    local y = y or error('missing y argument to beveledRectangle')
+    local cornerRadius = cornerRadius or error('missing cornerRadius argument to beveledRectangle')
+    local cornerSegments = cornerSegments or error('missing cornerSegments argument to beveledRectangle')
+    local borderSize = borderSize or error('missing borderSize argument to beveledRectangle')
+    local fillColor1 = fillColor1 or error('missing fillColor1 argument to beveledRectangle')
+    local fillColor2 = fillColor2 or error('missing fillColor2 argument to beveledRectangle')
+    local borderColor1 = borderColor1 or error('missing borderColor1 argument to beveledRectangle')
+    local borderColor2 = borderColor2 or error('missing borderColor2 argument to beveledRectangle')
 
     local fillGradient = fillGradient or false -- dont wanna error when this ones left off because we can just default to no gradient 
                                                --(most likely gonna not be using the gradient much anyway)
